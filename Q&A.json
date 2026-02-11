@@ -1,0 +1,402 @@
+[
+    {
+        "question": "What is Python?",
+        "answer": "Python is a high-level, interpreted, and general-purpose programming language. It is known for its readability and simplicity."
+    },
+    {
+        "question": "How do you declare a variable in Python?",
+        "answer": "In Python, you can declare a variable by simply assigning a value to it, like this: variable_name = value."
+    },
+    {
+        "question": "What is a list in Python?",
+        "answer": "A list in Python is a collection of ordered and changeable items. Lists are created using square brackets, e.g., my_list = [1, 2, 3]."
+    },
+    {
+        "question": "What is a tuple in Python?",
+        "answer": "A tuple is a collection of ordered and unchangeable items. Tuples are created using parentheses, e.g., my_tuple = (1, 2, 3)."
+    },
+    {
+        "question": "What is a dictionary in Python?",
+        "answer": "A dictionary in Python is a collection of unordered, changeable, and indexed items. Dictionaries are created using curly braces, e.g., my_dict = {'key1': 'value1', 'key2': 'value2'}."
+    },
+    {
+        "question": "How do you create a function in Python?",
+        "answer": "You can create a function in Python using the def keyword, followed by the function name and parentheses, e.g., def my_function():. Inside the function, you can write your code."
+    },
+    {
+        "question": "What is a lambda function in Python?",
+        "answer": "A lambda function is a small anonymous function in Python, defined using the lambda keyword. It can take any number of arguments but can only have one expression, e.g., lambda x: x + 1."
+    },
+    {
+        "question": "What are Python's built-in data types?",
+        "answer": "Python's built-in data types include int, float, str, list, tuple, set, and dict."
+    },
+    {
+        "question": "What is a module in Python?",
+        "answer": "A module in Python is a file containing Python code that can be imported and used in other Python programs. Modules can contain functions, classes, and variables."
+    },
+    {
+        "question": "How do you import a module in Python?",
+        "answer": "You can import a module in Python using the import statement, e.g., import math."
+    },
+    {
+        "question": "What is PEP 8?",
+        "answer": "PEP 8 is the Python Enhancement Proposal that provides guidelines and best practices for writing Python code."
+    },
+    {
+        "question": "How do you handle exceptions in Python?",
+        "answer": "You can handle exceptions in Python using the try and except blocks. Code that may raise an exception is placed inside the try block, and the code to handle the exception is placed inside the except block."
+    },
+    {
+        "question": "What is the difference between '==' and 'is' in Python?",
+        "answer": "The '==' operator checks for equality of values, while the 'is' operator checks for identity (whether two objects are the same in memory)."
+    },
+    {
+        "question": "What is the purpose of the pass statement in Python?",
+        "answer": "The pass statement is a null operation that is used as a placeholder in loops, functions, or classes where code is syntactically required but not yet implemented."
+    },
+    {
+        "question": "How do you create a class in Python?",
+        "answer": "You can create a class in Python using the class keyword, followed by the class name and a colon, e.g., class MyClass:. Inside the class, you can define methods and attributes."
+    },
+    {
+        "question": "What is inheritance in Python?",
+        "answer": "Inheritance in Python is a feature that allows a class to inherit attributes and methods from another class. The class that inherits is called the subclass, and the class being inherited from is called the superclass."
+    },
+    {
+        "question": "What is a decorator in Python?",
+        "answer": "A decorator in Python is a function that takes another function as an argument and extends or alters its behavior. Decorators are defined using the @ symbol."
+    },
+    {
+        "question": "What is list comprehension in Python?",
+        "answer": "List comprehension in Python is a concise way to create lists. It consists of brackets containing an expression followed by a for clause, e.g., [x for x in range(10) if x % 2 == 0]."
+    },
+    {
+        "question": "How do you create a generator in Python?",
+        "answer": "You can create a generator in Python using a function with the yield keyword. Generators are used to generate a sequence of values lazily, one at a time."
+    },
+    {
+        "question": "What is the use of the __init__ method in Python?",
+        "answer": "The __init__ method is a special method in Python classes that is called when an object is instantiated. It is used to initialize the object's attributes."
+    },
+    {
+        "question": "What is the difference between a shallow copy and a deep copy?",
+        "answer": "A shallow copy creates a new object but inserts references into it to the objects found in the original. A deep copy creates a new object and recursively copies all objects found in the original."
+    },
+    {
+        "question": "How do you concatenate strings in Python?",
+        "answer": "You can concatenate strings in Python using the + operator or the join() method."
+    },
+    {
+        "question": "What is the purpose of the self parameter in Python classes?",
+        "answer": "The self parameter refers to the instance of the class and is used to access attributes and methods within the class."
+    },
+    {
+        "question": "What is a virtual environment in Python?",
+        "answer": "A virtual environment in Python is an isolated environment that allows you to manage dependencies for different projects without conflicts."
+    },
+    {
+        "question": "What is the difference between range() and xrange()?",
+        "answer": "In Python 2, range() returns a list, while xrange() returns an xrange object. In Python 3, xrange() was removed, and range() behaves like xrange() in Python 2."
+    },
+    {
+        "question": "What is the Global Interpreter Lock (GIL)?",
+        "answer": "The Global Interpreter Lock (GIL) is a mutex that protects access to Python objects, preventing multiple native threads from executing Python bytecodes at once."
+    },
+    {
+        "question": "How do you perform file I/O operations in Python?",
+        "answer": "You can perform file I/O operations in Python using the open() function to open a file, the read() or write() methods to read or write data, and the close() method to close the file."
+    },
+    {
+        "question": "What are Python's built-in functions?",
+        "answer": "Python has many built-in functions, including len(), type(), int(), str(), sum(), min(), max(), and more."
+    },
+    {
+        "question": "How do you create a custom exception in Python?",
+        "answer": "You can create a custom exception in Python by defining a new class that inherits from the built-in Exception class."
+    },
+    {
+        "question": "What is the difference between the append() and extend() methods in Python lists?",
+        "answer": "The append() method adds a single element to the end of a list, while the extend() method adds all elements of an iterable to the end of a list."
+    },
+    {
+        "question": "How do you create a set in Python?",
+        "answer": "You can create a set in Python using curly braces or the set() function, e.g., my_set = {1, 2, 3} or my_set = set([1, 2, 3])."
+    },
+    {
+        "question": "What is the difference between a list and a tuple?",
+        "answer": "Lists are mutable, meaning they can be changed after creation, while tuples are immutable and cannot be changed after creation."
+    },
+    {
+        "question": "How do you access elements in a dictionary?",
+        "answer": "You can access elements in a dictionary by using their keys, e.g., my_dict['key1']."
+    },
+    {
+        "question": "How do you add an element to a dictionary?",
+        "answer": "You can add an element to a dictionary by assigning a value to a new key, e.g., my_dict['new_key'] = 'new_value'."
+    },
+    {
+        "question": "How do you reverse a list in Python?",
+        "answer": "You can reverse a list in Python using the reverse() method or by using slicing, e.g., my_list[::-1]."
+    },
+    {
+        "question": "What is the difference between map() and filter() functions in Python?",
+        "answer": "The map() function applies a given function to each item in an iterable and returns a list of the results. The filter() function applies a given function to each item in an iterable and returns only the items for which the function returns True."
+    },
+    {
+        "question": "How do you create a list of dictionaries in Python?",
+        "answer": "You can create a list of dictionaries in Python by using square brackets to define a list and curly braces to define each dictionary, e.g., my_list = [{'key1': 'value1'}, {'key2': 'value2'}]."
+    },
+    {
+        "question": "How do you convert a string to a list in Python?",
+        "answer": "You can convert a string to a list in Python using the split() method, e.g., my_list = my_string.split()."
+    },
+    {
+        "question": "What is a set in Python?",
+        "answer": "A set in Python is a collection of unordered and unindexed items. Sets are created using curly braces or the set() function, e.g., my_set = {1, 2, 3} or my_set = set([1, 2, 3])."
+    },
+    {
+        "question": "How do you remove duplicates from a list in Python?",
+        "answer": "You can remove duplicates from a list in Python by converting the list to a set and then back to a list, e.g., my_list = list(set(my_list))."
+    },
+    {
+        "question": "What is a closure in Python?",
+        "answer": "A closure in Python is a function that remembers the values from its enclosing lexical scope even when the program flow is no longer in that scope."
+    },
+    {
+        "question": "How do you handle command-line arguments in Python?",
+        "answer": "You can handle command-line arguments in Python using the sys.argv list, which contains the command-line arguments passed to the script."
+    },
+    {
+        "question": "What is a Python package?",
+        "answer": "A Python package is a collection of modules organized in directories that provide additional functionality to a Python project. Packages are created by placing an __init__.py file inside a directory."
+    },
+    {
+        "question": "How do you create a virtual environment in Python?",
+        "answer": "You can create a virtual environment in Python using the venv module. Run the command python -m venv myenv to create a virtual environment named 'myenv'."
+    },
+    {
+        "question": "What is the purpose of the __str__ method in Python?",
+        "answer": "The __str__ method in Python is a special method that is called when you use the str() function or print() function on an object. It returns a string representation of the object."
+    },
+    {
+        "question": "How do you read a CSV file in Python?",
+        "answer": "You can read a CSV file in Python using the csv module. Use the csv.reader() function to read the file and iterate over the rows."
+    },
+    {
+        "question": "What is the difference between mutable and immutable data types in Python?",
+        "answer": "Mutable data types can be changed after creation, while immutable data types cannot be changed after creation. Examples of mutable data types are lists and dictionaries, while examples of immutable data types are strings and tuples."
+    },
+    {
+        "question": "How do you create a lambda function in Python?",
+        "answer": "You can create a lambda function in Python using the lambda keyword, followed by the arguments and the expression, e.g., lambda x: x + 1."
+    },
+    {
+        "question": "What is a generator expression in Python?",
+        "answer": "A generator expression in Python is a concise way to create a generator. It is similar to a list comprehension but uses parentheses instead of square brackets, e.g., (x for x in range(10) if x % 2 == 0)."
+    },
+    {
+        "question": "How do you check for an empty list in Python?",
+        "answer": "You can check for an empty list in Python using an if statement, e.g., if not my_list:."
+    },
+    {
+        "question": "What is the purpose of the __repr__ method in Python?",
+        "answer": "The __repr__ method in Python is a special method that is called when you use the repr() function on an object. It returns a string representation of the object that is more suitable for debugging."
+    },
+    {
+        "question": "How do you create a list in Python?",
+        "answer": "You can create a list in Python using square brackets, e.g., my_list = [1, 2, 3]."
+    },
+    {
+        "question": "How do you create a dictionary in Python?",
+        "answer": "You can create a dictionary in Python using curly braces, e.g., my_dict = {'key1': 'value1', 'key2': 'value2'}."
+    },
+    {
+        "question": "What is the difference between a deep copy and a shallow copy in Python?",
+        "answer": "A deep copy creates a new object and recursively copies all objects found in the original. A shallow copy creates a new object but inserts references into it to the objects found in the original."
+    },
+    {
+        "question": "How do you merge two dictionaries in Python?",
+        "answer": "In Python 3.9+, use dict1 | dict2. In earlier versions, use dict.update() or {**dict1, **dict2}."
+    },
+    {
+        "question": "What are f-strings in Python?",
+        "answer": "F-strings (formatted string literals) allow embedding expressions inside string literals using curly braces, e.g., f'Hello {name}'."
+    },
+    {
+        "question": "How do you perform type conversion in Python?",
+        "answer": "You can use functions like int(), float(), str(), list(), and tuple() for type conversion."
+    },
+    {
+        "question": "What is the purpose of the __name__ variable in Python?",
+        "answer": "It allows a script to determine if it's being run as the main program or imported as a module."
+    },
+    {
+        "question": "What is Pythonic code?",
+        "answer": "Pythonic code follows best practices, making use of Python's features like list comprehensions, meaningful variable names, and clear syntax."
+    },
+    {
+        "question": "How do you measure execution time in Python?",
+        "answer": "Use the time module’s time() function or the timeit module for more precise timing."
+    },
+    {
+        "question": "What is the difference between Python 2 and Python 3?",
+        "answer": "Python 3 has improved syntax, better Unicode handling, and removes legacy constructs like print statements without parentheses."
+    },
+    {
+        "question": "How do you comment code in Python?",
+        "answer": "You can use the # symbol for single-line comments and triple quotes (''' or \"\"\") for multi-line comments."
+    },
+    {
+        "question": "What is a Python package?",
+        "answer": "A package is a collection of Python modules organized in directories with an __init__.py file to make them reusable."
+    },
+    {
+        "question": "What is the difference between mutable and immutable objects?",
+        "answer": "Mutable objects (like lists and dictionaries) can be changed after creation, while immutable objects (like strings and tuples) cannot be changed."
+    },
+    {
+        "question": "How do you define a class method in Python?",
+        "answer": "Use the @classmethod decorator and define the method with cls as the first parameter."
+    },
+    {
+        "question": "What is the difference between the sort() method and the sorted() function?",
+        "answer": "The sort() method sorts a list in place and returns None, while the sorted() function returns a new sorted list."
+    },
+    {
+        "question": "How do you create a tuple from a list?",
+        "answer": "You can convert a list to a tuple using the tuple() function, e.g., my_tuple = tuple(my_list)."
+    },
+    {
+        "question": "What is recursion in Python?",
+        "answer": "Recursion is a programming technique where a function calls itself to solve smaller instances of the problem."
+    },
+    {
+        "question": "What is the zip() function in Python?",
+        "answer": "The zip() function combines multiple iterables element-wise into tuples."
+    },
+    {
+        "question": "How does Python manage memory?",
+        "answer": "Python uses automatic memory management with a garbage collector to clean up unused objects."
+    },
+    {
+        "question": "How do you check if a key exists in a dictionary?",
+        "answer": "You can use the 'in' keyword, e.g., 'if key in my_dict:'."
+    },
+    {
+        "question": "What is the enumerate() function in Python?",
+        "answer": "The enumerate() function adds an index to an iterable and returns it as an enumerate object."
+    },
+    {
+        "question": "What are Python's logical operators?",
+        "answer": "Python has 'and', 'or', and 'not' as logical operators."
+    },
+    {
+        "question": "What is the difference between isdigit() and isnumeric()?",
+        "answer": "isdigit() checks if a string contains only digits, while isnumeric() also recognizes numbers in other formats, such as Unicode fractions."
+    },
+    {
+        "question": "How do you remove whitespace from a string?",
+        "answer": "You can use the strip() method to remove leading and trailing whitespace."
+    },
+    {
+        "question": "What is the difference between pop() and remove() in lists?",
+        "answer": "pop() removes an item at a specified index (or the last item by default) and returns it, while remove() removes the first occurrence of a specified value."
+    },
+    {
+        "question": "How do you count occurrences of an element in a list?",
+        "answer": "You can use the count() method, e.g., my_list.count(value)."
+    },
+    {
+        "question": "How do you generate random numbers in Python?",
+        "answer": "Use the random module, e.g., random.randint(1, 10) for an integer between 1 and 10."
+    },
+    {
+        "question": "How do you convert a list into a string?",
+        "answer": "You can use the join() method, e.g., ', '.join(my_list)."
+    },
+    {
+        "question": "What is the difference between a module and a package in Python?",
+        "answer": "A module is a single file containing Python code, while a package is a directory containing multiple modules and an __init__.py file."
+    },
+    {
+        "question": "What is the purpose of the with statement in Python?",
+        "answer": "The with statement is used to handle resources like files, ensuring they are properly closed after use."
+    },
+    {
+        "question": "What is the difference between static methods and class methods?",
+        "answer": "Class methods take cls as their first parameter and can modify class variables, while static methods do not take cls and behave like regular functions."
+    },
+    {
+        "question": "How do you create a 2D list in Python?",
+        "answer": "You can use nested lists, e.g., matrix = [[1, 2], [3, 4]]."
+    },
+    {
+        "question": "What is the difference between __eq__ and __cmp__ methods?",
+        "answer": "__eq__ checks equality, while __cmp__ was used for comparisons but removed in Python 3."
+    },
+    {
+        "question": "What is the purpose of the pass statement?",
+        "answer": "The pass statement is a placeholder that allows code to run without performing any action."
+    },
+    {
+        "question": "What is the frozenset type in Python?",
+        "answer": "A frozenset is an immutable version of a set."
+    },
+    {
+        "question": "How do you swap two variables in Python?",
+        "answer": "You can swap them using tuple unpacking, e.g., a, b = b, a."
+    },
+    {
+        "question": "What is the difference between Python lists and NumPy arrays?",
+        "answer": "NumPy arrays are more efficient for numerical operations as they use fixed-type elements and support vectorized operations."
+    },
+    {
+        "question": "What is the difference between ASCII and Unicode?",
+        "answer": "ASCII represents 128 characters, while Unicode supports many languages and symbols with multiple encodings like UTF-8."
+    },
+    {
+        "question": "What is the Counter class in Python?",
+        "answer": "The Counter class from the collections module counts occurrences of elements in an iterable."
+    },
+    {
+        "question": "What is the purpose of the itertools module?",
+        "answer": "The itertools module provides efficient looping constructs and iterators for handling large datasets."
+    },
+    {
+        "question": "How do you convert a dictionary to a list?",
+        "answer": "You can convert a dictionary to a list using list(my_dict.items()), list(my_dict.keys()), or list(my_dict.values())."
+    },
+    {
+        "question": "What is the purpose of the @property decorator?",
+        "answer": "The @property decorator allows you to define a method that behaves like an attribute."
+    },
+    {
+        "question": "What is the difference between next() and iter()?",
+        "answer": "iter() returns an iterator, and next() retrieves the next element from an iterator."
+    },
+    {
+        "question": "What are Python's membership operators?",
+        "answer": "Python has 'in' and 'not in' operators to check for membership in sequences."
+    },
+    {
+        "question": "What is the difference between filter() and list comprehensions?",
+        "answer": "filter() applies a function to filter elements, while list comprehensions provide a more readable way to filter and transform elements."
+    },
+    {
+        "question": "What is a weak reference in Python?",
+        "answer": "A weak reference allows access to an object without preventing it from being garbage collected."
+    },
+    {
+        "question": "What is the purpose of the functools module?",
+        "answer": "The functools module provides higher-order functions that act on or return functions."
+    },
+    {
+        "question": "How do you compare two dictionaries in Python?",
+        "answer": "You can compare dictionaries using == to check if they have the same keys and values."
+    },
+    {
+        "question": "What is an Abstract Base Class (ABC) in Python?",
+        "answer": "An ABC defines a blueprint for other classes and ensures that certain methods are implemented in subclasses."
+    }
+]
