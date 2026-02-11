@@ -1,0 +1,539 @@
+[    
+    
+    {
+        "title": "Add Two Numbers",
+        "description": "A program to take two numbers from the user and calculate their sum.",
+        "code": "a = int(input('Enter first number: '))\nb = int(input('Enter second number: '))\nprint('Sum:', a + b)"
+    },
+    {
+        "title": "Check Even or Odd",
+        "description": "A program to check if a number entered by the user is even or odd.",
+        "code": "num = int(input('Enter a number: '))\nif num % 2 == 0:\n    print('Even')\nelse:\n    print('Odd')"
+    },
+    {
+        "title": "Find Factorial",
+        "description": "A program to calculate the factorial of a number using recursion.",
+        "code": "def factorial(n):\n    return 1 if n == 0 else n * factorial(n - 1)\nnum = int(input('Enter a number: '))\nprint('Factorial:', factorial(num))"
+    },
+    {
+        "title": "Reverse a String",
+        "description": "A program to reverse a string entered by the user.",
+        "code": "string = input('Enter a string: ')\nprint('Reversed string:', string[::-1])"
+    },
+    {
+        "title": "Multiplication Table",
+        "description": "A program to display the multiplication table for a given number.",
+        "code": "num = int(input('Enter a number: '))\nfor i in range(1, 11):\n    print(f'{num} x {i} = {num * i}')"
+    },
+    {
+        "title": "Check Prime Number",
+        "description": "A program to check if a number is a prime number.",
+        "code": "num = int(input('Enter a number: '))\nif num > 1:\n    for i in range(2, int(num ** 0.5) + 1):\n        if num % i == 0:\n            print('Not Prime')\n            break\n    else:\n        print('Prime')\nelse:\n    print('Not Prime')"
+    },
+    {
+        "title": "Find the Largest Element",
+        "description": "A program to find the largest element in a list of numbers.",
+        "code": "numbers = [int(x) for x in input('Enter numbers separated by spaces: ').split()]\nprint('Largest number:', max(numbers))"
+    },
+    {
+        "title": "Fibonacci Series",
+        "description": "A program to print the Fibonacci series up to n terms.",
+        "code": "n = int(input('Enter the number of terms: '))\na, b = 0, 1\nfor _ in range(n):\n    print(a, end=' ')\n    a, b = b, a + b"
+    },
+    {
+        "title": "Palindrome Check",
+        "description": "A program to check if a given string is a palindrome.",
+        "code": "string = input('Enter a string: ')\nif string == string[::-1]:\n    print('Palindrome')\nelse:\n    print('Not a Palindrome')"
+    },
+    {
+        "title": "Bubble Sort Algorithm",
+        "description": "A program to sort a list of numbers using the Bubble Sort algorithm.",
+        "code": "numbers = [int(x) for x in input('Enter numbers separated by spaces: ').split()]\nfor i in range(len(numbers)):\n    for j in range(0, len(numbers) - i - 1):\n        if numbers[j] > numbers[j + 1]:\n            numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]\nprint('Sorted List:', numbers)"
+    },
+    {
+        "title": "Sum of List Elements",
+        "description": "A program to calculate the sum of all elements in a list.",
+        "code": "numbers = [int(x) for x in input('Enter numbers separated by spaces: ').split()]\nprint('Sum:', sum(numbers))"
+    },
+    {
+        "title": "Leap Year Check",
+        "description": "A program to check if a year is a leap year.",
+        "code": "year = int(input('Enter a year: '))\nif (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):\n    print('Leap Year')\nelse:\n    print('Not a Leap Year')"
+    },
+    {
+        "title": "Count Vowels in a String",
+        "description": "A program to count the number of vowels in a string.",
+        "code": "string = input('Enter a string: ')\nvowels = 'aeiouAEIOU'\ncount = sum(1 for char in string if char in vowels)\nprint('Vowel Count:', count)"
+    },
+    {
+        "title": "Find Second Largest Element",
+        "description": "A program to find the second largest element in a list.",
+        "code": "numbers = [int(x) for x in input('Enter numbers separated by spaces: ').split()]\nnumbers.sort()\nprint('Second Largest:', numbers[-2])"
+    },
+    {
+        "title": "Calculate Power of a Number",
+        "description": "A program to calculate the power of a number.",
+        "code": "base = int(input('Enter base: '))\nexp = int(input('Enter exponent: '))\nprint('Result:', base ** exp)"
+    },
+    {
+        "title": "Remove Duplicates from List",
+        "description": "A program to remove duplicate elements from a list.",
+        "code": "numbers = [int(x) for x in input('Enter numbers separated by spaces: ').split()]\nunique_numbers = list(set(numbers))\nprint('List without duplicates:', unique_numbers)"
+    },
+    {
+        "title": "GCD of Two Numbers",
+        "description": "A program to find the Greatest Common Divisor (GCD) of two numbers.",
+        "code": "import math\nnum1 = int(input('Enter first number: '))\nnum2 = int(input('Enter second number: '))\nprint('GCD:', math.gcd(num1, num2))"
+    },
+    {
+        "title": "Character Frequency in String",
+        "description": "A program to find the frequency of each character in a string.",
+        "code": "string = input('Enter a string: ')\nfrequency = {char: string.count(char) for char in set(string)}\nprint('Character Frequency:', frequency)"
+    },
+    {
+        "title": "Check Armstrong Number",
+        "description": "A program to check if a number is an Armstrong number.",
+        "code": "num = int(input('Enter a number: '))\norder = len(str(num))\nsum_of_powers = sum(int(digit)**order for digit in str(num))\nif sum_of_powers == num:\n    print('Armstrong Number')\nelse:\n    print('Not an Armstrong Number')"
+    },
+    {
+        "title": "Binary Search",
+        "description": "A program to implement Binary Search on a sorted list.",
+        "code": "def binary_search(arr, target):\n    low, high = 0, len(arr) - 1\n    while low <= high:\n        mid = (low + high) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1\n\narr = sorted([int(x) for x in input('Enter sorted list: ').split()])\ntarget = int(input('Enter target number: '))\nresult = binary_search(arr, target)\nif result != -1:\n    print('Element found at index', result)\nelse:\n    print('Element not found')"
+    },
+    {
+        "title": "Find the Sum of Digits in a Number",
+        "description": "A program to calculate the sum of digits in a number.",
+        "code": "num = int(input('Enter a number: '))\nsum_of_digits = sum(int(digit) for digit in str(num))\nprint('Sum of digits:', sum_of_digits)"
+    },
+    {
+        "title": "Check Perfect Number",
+        "description": "A program to check if a number is a perfect number.",
+        "code": "num = int(input('Enter a number: '))\nif sum(i for i in range(1, num) if num % i == 0) == num:\n    print('Perfect Number')\nelse:\n    print('Not a Perfect Number')"
+    },
+    {
+        "title": "Merge Two Sorted Lists",
+        "description": "A program to merge two sorted lists.",
+        "code": "list1 = sorted([int(x) for x in input('Enter first sorted list: ').split()])\nlist2 = sorted([int(x) for x in input('Enter second sorted list: ').split()])\nmerged_list = sorted(list1 + list2)\nprint('Merged List:', merged_list)"
+    },
+    {
+        "title": "Check Anagram Strings",
+        "description": "A program to check if two strings are anagrams.",
+        "code": "string1 = input('Enter first string: ')\nstring2 = input('Enter second string: ')\nif sorted(string1) == sorted(string2):\n    print('Anagram')\nelse:\n    print('Not an Anagram')"
+    },
+    {
+        "title": "Convert Decimal to Binary",
+        "description": "A program to convert a decimal number to binary.",
+        "code": "num = int(input('Enter a decimal number: '))\nprint('Binary:', bin(num)[2:])"
+    },
+    {
+        "title": "Find Common Elements in Two Lists",
+        "description": "A program to find common elements between two lists.",
+        "code": "list1 = [int(x) for x in input('Enter first list: ').split()]\nlist2 = [int(x) for x in input('Enter second list: ').split()]\ncommon = list(set(list1) & set(list2))\nprint('Common elements:', common)"
+    },
+    {
+        "title": "Check Palindrome Number",
+        "description": "A program to check if a number is a palindrome.",
+        "code": "num = int(input('Enter a number: '))\nif str(num) == str(num)[::-1]:\n    print('Palindrome Number')\nelse:\n    print('Not a Palindrome Number')"
+    },
+    {
+        "title": "Calculate Compound Interest",
+        "description": "A program to calculate compound interest.",
+        "code": "p = float(input('Enter principal: '))\nr = float(input('Enter rate of interest: '))\nt = float(input('Enter time in years: '))\nci = p * (pow((1 + r / 100), t))\nprint('Compound Interest:', ci)"
+    },
+    {
+        "title": "Check Armstrong Numbers in an Interval",
+        "description": "A program to find all Armstrong numbers within a given interval.",
+        "code": "low = int(input('Enter lower limit: '))\nhigh = int(input('Enter upper limit: '))\nfor num in range(low, high + 1):\n    order = len(str(num))\n    sum_of_powers = sum(int(digit)**order for digit in str(num))\n    if num == sum_of_powers:\n        print(num)"
+    },
+    {
+        "title": "Matrix Addition",
+        "description": "A program to perform addition of two matrices.",
+        "code": "matrix1 = [[int(x) for x in input().split()] for _ in range(2)]\nmatrix2 = [[int(x) for x in input().split()] for _ in range(2)]\nsum_matrix = [[matrix1[i][j] + matrix2[i][j] for j in range(len(matrix1[0]))] for i in range(len(matrix1))]\nprint('Matrix Sum:', sum_matrix)"
+    },
+    {
+        "title": "Find LCM of Two Numbers",
+        "description": "A program to calculate the Least Common Multiple (LCM) of two numbers.",
+        "code": "import math\nnum1 = int(input('Enter first number: '))\nnum2 = int(input('Enter second number: '))\nlcm = abs(num1 * num2) // math.gcd(num1, num2)\nprint('LCM:', lcm)"
+    },
+    {
+        "title": "Count Words in a String",
+        "description": "A program to count the number of words in a string.",
+        "code": "string = input('Enter a string: ')\nwords = string.split()\nprint('Word count:', len(words))"
+    },
+    {
+        "title": "Check Alphabet or Digit",
+        "description": "A program to check if a character is an alphabet or a digit.",
+        "code": "char = input('Enter a character: ')\nif char.isalpha():\n    print('Alphabet')\nelif char.isdigit():\n    print('Digit')\nelse:\n    print('Neither Alphabet nor Digit')"
+    },
+    {
+        "title": "Swap Two Variables Without Temp",
+        "description": "A program to swap two variables without using a temporary variable.",
+        "code": "a = int(input('Enter first number: '))\nb = int(input('Enter second number: '))\na, b = b, a\nprint('After swap: a =', a, 'b =', b)"
+    },
+    {
+        "title": "Generate Pascal's Triangle",
+        "description": "A program to generate Pascal's triangle up to n rows.",
+        "code": "n = int(input('Enter number of rows: '))\ntriangle = [[1]]\nfor i in range(1, n):\n    row = [1] + [triangle[i-1][j] + triangle[i-1][j+1] for j in range(len(triangle[i-1]) - 1)] + [1]\n    triangle.append(row)\nfor row in triangle:\n    print(row)"
+    },
+    {
+        "title": "Find Transpose of a Matrix",
+        "description": "A program to find the transpose of a matrix.",
+        "code": "matrix = [[int(x) for x in input().split()] for _ in range(2)]\ntranspose = [[matrix[j][i] for j in range(len(matrix))] for i in range(len(matrix[0]))]\nprint('Transpose:', transpose)"
+    },
+    {
+        "title": "Check if String is Uppercase",
+        "description": "A program to check if a string is in uppercase.",
+        "code": "string = input('Enter a string: ')\nif string.isupper():\n    print('String is uppercase')\nelse:\n    print('String is not uppercase')"
+    },
+    {
+        "title": "Find Intersection of Two Lists",
+        "description": "A program to find the intersection of two lists.",
+        "code": "list1 = [int(x) for x in input('Enter first list: ').split()]\nlist2 = [int(x) for x in input('Enter second list: ').split()]\nintersection = list(set(list1) & set(list2))\nprint('Intersection:', intersection)"
+    },
+    {
+        "title": "Print Diamond Pattern",
+        "description": "A program to print a diamond pattern using stars.",
+        "code": "n = int(input('Enter the number of rows: '))\nfor i in range(n):\n    print(' ' * (n - i - 1) + '*' * (2 * i + 1))\nfor i in range(n - 2, -1, -1):\n    print(' ' * (n - i - 1) + '*' * (2 * i + 1))"
+    },
+    {
+        "title": "Find Median of a List",
+        "description": "A program to calculate the median of a list of numbers.",
+        "code": "numbers = sorted([int(x) for x in input('Enter numbers separated by spaces: ').split()])\nif len(numbers) % 2 == 0:\n    median = (numbers[len(numbers)//2 - 1] + numbers[len(numbers)//2]) / 2\nelse:\n    median = numbers[len(numbers)//2]\nprint('Median:', median)"
+    },
+    {
+        "title": "Check Palindrome List",
+        "description": "A program to check if a given list of integers is a palindrome.",
+        "code": "numbers = [int(x) for x in input('Enter numbers separated by spaces: ').split()]\nif numbers == numbers[::-1]:\n    print('Palindrome List')\nelse:\n    print('Not a Palindrome List')"
+    },
+    {
+        "title": "Remove Punctuation from String",
+        "description": "A program to remove punctuation characters from a string.",
+        "code": "import string\ntext = input('Enter a string: ')\ncleaned_text = text.translate(str.maketrans('', '', string.punctuation))\nprint('String without punctuation:', cleaned_text)"
+    },
+    {
+        "title": "Count Words in Each Line of Text",
+        "description": "A program to count the number of words in each line of a multi-line input.",
+        "code": "lines = []\nprint('Enter lines of text (type END to stop):')\nwhile True:\n    line = input()\n    if line == 'END':\n        break\n    lines.append(line)\nfor i, line in enumerate(lines):\n    print(f'Line {i + 1} word count: {len(line.split())}')"
+    },
+    {
+        "title": "Sum of Digits in List",
+        "description": "A program to calculate the sum of all digits present in a list of numbers.",
+        "code": "numbers = [int(x) for x in input('Enter numbers separated by spaces: ').split()]\ndigit_sum = sum(sum(int(digit) for digit in str(num)) for num in numbers)\nprint('Sum of all digits:', digit_sum)"
+    },
+    {
+        "title": "Find Missing Number in List",
+        "description": "A program to find the missing number in a list of consecutive integers.",
+        "code": "numbers = [int(x) for x in input('Enter numbers separated by spaces: ').split()]\nfull_range = set(range(min(numbers), max(numbers) + 1))\nmissing = list(full_range - set(numbers))\nprint('Missing number:', missing[0])"
+    },
+    {
+        "title": "Generate Random Password",
+        "description": "A program to generate a random password of a given length.",
+        "code": "import random\nimport string\nlength = int(input('Enter password length: '))\ncharacters = string.ascii_letters + string.digits + string.punctuation\npassword = ''.join(random.choice(characters) for _ in range(length))\nprint('Generated password:', password)"
+    },
+    {
+        "title": "Check if All Characters Are Unique",
+        "description": "A program to check if all characters in a string are unique.",
+        "code": "text = input('Enter a string: ')\nif len(set(text)) == len(text):\n    print('All characters are unique')\nelse:\n    print('There are duplicate characters')"
+    },
+    {
+        "title": "Sort Words in a Sentence",
+        "description": "A program to sort the words in a sentence alphabetically.",
+        "code": "sentence = input('Enter a sentence: ')\nwords = sentence.split()\nsorted_words = sorted(words)\nprint('Sorted words:', ' '.join(sorted_words))"
+    },
+    {
+        "title": "Check Substring in String",
+        "description": "A program to check if a substring is present in a string.",
+        "code": "string = input('Enter the main string: ')\nsubstring = input('Enter the substring: ')\nif substring in string:\n    print('Substring is present')\nelse:\n    print('Substring is not present')"
+    },
+    {
+        "title": "Count Positive and Negative Numbers",
+        "description": "A program to count the number of positive and negative numbers in a list.",
+        "code": "numbers = [int(x) for x in input('Enter numbers separated by spaces: ').split()]\npositive_count = sum(1 for num in numbers if num > 0)\nnegative_count = sum(1 for num in numbers if num < 0)\nprint('Positive count:', positive_count)\nprint('Negative count:', negative_count)"
+    },
+    {
+        "title": "Check if List is Sorted",
+        "description": "A program to check if a list of integers is sorted in ascending order.",
+        "code": "numbers = [int(x) for x in input('Enter numbers separated by spaces: ').split()]\nif numbers == sorted(numbers):\n    print('List is sorted')\nelse:\n    print('List is not sorted')"
+    },
+    {
+        "title": "Find Longest Word in a Sentence",
+        "description": "A program to find the longest word in a given sentence.",
+        "code": "sentence = input('Enter a sentence: ')\nwords = sentence.split()\nlongest_word = max(words, key=len)\nprint('Longest word:', longest_word)"
+    },
+    {
+        "title": "Reverse Each Word in a Sentence",
+        "description": "A program to reverse each word in a sentence without changing their order.",
+        "code": "sentence = input('Enter a sentence: ')\nreversed_words = ' '.join(word[::-1] for word in sentence.split())\nprint('Reversed sentence:', reversed_words)"
+    },
+    {
+        "title": "Find Sum of Prime Numbers in a Range",
+        "description": "A program to calculate the sum of all prime numbers within a given range.",
+        "code": "def is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nlow, high = map(int, input('Enter range (two numbers): ').split())\nprime_sum = sum(num for num in range(low, high + 1) if is_prime(num))\nprint('Sum of primes:', prime_sum)"
+    },
+    {
+        "title": "Find Maximum Frequency Character",
+        "description": "A program to find the character that occurs most frequently in a string.",
+        "code": "string = input('Enter a string: ')\nfrequency = {char: string.count(char) for char in set(string)}\nmax_char = max(frequency, key=frequency.get)\nprint('Character with maximum frequency:', max_char)"
+    },
+    {
+        "title": "Check if Matrix is Symmetric",
+        "description": "A program to check if a square matrix is symmetric.",
+        "code": "n = int(input('Enter matrix size (n x n): '))\nmatrix = [[int(x) for x in input().split()] for _ in range(n)]\ntranspose = [[matrix[j][i] for j in range(n)] for i in range(n)]\nif matrix == transpose:\n    print('Matrix is symmetric')\nelse:\n    print('Matrix is not symmetric')"
+    },
+    {
+        "title": "Find Minimum and Maximum in a List",
+        "description": "A program to find the smallest and largest numbers in a list.",
+        "code": "numbers = [int(x) for x in input('Enter numbers separated by spaces: ').split()]\nprint('Minimum:', min(numbers))\nprint('Maximum:', max(numbers))"
+    },
+    {
+        "title": "Check if Year is a Century Year",
+        "description": "A program to check if a given year is a century year.",
+        "code": "year = int(input('Enter a year: '))\nif year % 100 == 0:\n    print('Century Year')\nelse:\n    print('Not a Century Year')"
+    },
+    {
+        "title": "Calculate HCF Using Recursion",
+        "description": "A program to calculate the Highest Common Factor (HCF) of two numbers using recursion.",
+        "code": "def hcf(a, b):\n    return a if b == 0 else hcf(b, a % b)\nnum1 = int(input('Enter first number: '))\nnum2 = int(input('Enter second number: '))\nprint('HCF:', hcf(num1, num2))"
+    },
+    {
+        "title": "Sort List by Length of Elements",
+        "description": "A program to sort a list of words by the length of each word.",
+        "code": "words = input('Enter words separated by spaces: ').split()\nsorted_words = sorted(words, key=len)\nprint('Sorted by length:', ' '.join(sorted_words))"
+    },
+    {
+        "title": "Check if a string is a pangram",
+        "description": "Determines if the given string contains all the letters of the English alphabet at least once.",
+        "code": "def is_pangram(s):\n    return set('abcdefghijklmnopqrstuvwxyz') <= set(s.lower())"
+    },
+    {
+        "title": "Find all anagrams of a word from a list",
+        "description": "Returns all anagrams of the given word found in a list.",
+        "code": "def find_anagrams(word, words):\n    return [w for w in words if sorted(w) == sorted(word)]"
+    },
+    {
+        "title": "Count vowel frequency",
+        "description": "Counts the frequency of vowels in the given text.",
+        "code": "from collections import Counter\ndef vowel_count(text):\n    return Counter(c for c in text.lower() if c in 'aeiou')"
+    },
+    {
+        "title": "Flatten a nested list",
+        "description": "Converts a nested list into a flat list.",
+        "code": "def flatten(lst):\n    return [item for sublist in lst for item in sublist]"
+    },
+    {
+        "title": "Remove duplicates while preserving order",
+        "description": "Removes duplicates from a sequence while retaining the original order.",
+        "code": "def remove_duplicates(seq):\n    seen = set()\n    return [x for x in seq if not (x in seen or seen.add(x))]"
+    },
+    {
+        "title": "Convert number to binary manually",
+        "description": "Converts a number into binary without using built-in functions.",
+        "code": "def to_binary(n):\n    return ''.join(str((n >> i) & 1) for i in range(n.bit_length()-1, -1, -1))"
+    },
+    {
+        "title": "Group words by anagram",
+        "description": "Groups a list of words into anagram clusters.",
+        "code": "from collections import defaultdict\ndef group_anagrams(words):\n    d = defaultdict(list)\n    for w in words:\n        d[tuple(sorted(w))].append(w)\n    return list(d.values())"
+    },
+    {
+        "title": "Find longest common prefix",
+        "description": "Finds the longest common prefix among a list of strings.",
+        "code": "def longest_prefix(strs):\n    if not strs: return ''\n    s1, s2 = min(strs), max(strs)\n    for i, c in enumerate(s1):\n        if c != s2[i]: return s1[:i]\n    return s1"
+    },
+    {
+        "title": "Count elements greater than average",
+        "description": "Counts elements in a list that are greater than the average value.",
+        "code": "def count_above_avg(lst):\n    avg = sum(lst)/len(lst)\n    return sum(1 for x in lst if x > avg)"
+    },
+    {
+        "title": "Zip two dictionaries",
+        "description": "Combines two dictionaries into one, with common keys mapped to tuples of their values.",
+        "code": "def zip_dicts(d1, d2):\n    return {k: (d1[k], d2[k]) for k in d1 if k in d2}"
+    },
+    {
+        "title": "Detect cycles in a linked list",
+        "description": "Checks if a linked list has a cycle using two pointers.",
+        "code": "def has_cycle(head):\n    slow = fast = head\n    while fast and fast.next:\n        slow, fast = slow.next, fast.next.next\n        if slow == fast: return True\n    return False"
+    },
+    {
+        "title": "Check if brackets are balanced",
+        "description": "Validates whether brackets in a string are balanced using a stack.",
+        "code": "def is_balanced(s):\n    stack = []\n    mapping = {')':'(', '}':'{', ']':'['}\n    for char in s:\n        if char in mapping.values():\n            stack.append(char)\n        elif char in mapping:\n            if not stack or stack.pop() != mapping[char]:\n                return False\n    return not stack"
+    },
+    {
+        "title": "Check if a number is a perfect square",
+        "description": "Determines if a number is a perfect square.",
+        "code": "def is_square(n):\n    return int(n**0.5)**2 == n"
+    },
+    {
+        "title": "Sum of digits of a number",
+        "description": "Calculates the sum of the digits in a number.",
+        "code": "def sum_digits(n):\n    return sum(int(i) for i in str(n))"
+    },
+    {
+        "title": "Generate a Fibonacci sequence with yield",
+        "description": "Generates a Fibonacci sequence up to n elements using the yield keyword.",
+        "code": "def fibonacci(n):\n    a, b = 0, 1\n    for _ in range(n):\n        yield a\n        a, b = b, a + b"
+    },
+    {
+        "title": "Find first non-repeating character",
+        "description": "Finds the first non-repeating character in a string.",
+        "code": "from collections import Counter\ndef first_unique(s):\n    counts = Counter(s)\n    for c in s:\n        if counts[c] == 1:\n            return c\n    return None"
+    },
+    {
+        "title": "Sort dictionary by value",
+        "description": "Sorts a dictionary by its values.",
+        "code": "def sort_dict(d):\n    return dict(sorted(d.items(), key=lambda item: item[1]))"
+    },
+    {
+        "title": "Check for prime number",
+        "description": "Determines if a given number is prime.",
+        "code": "def is_prime(n):\n    if n < 2: return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0: return False\n    return True"
+    },
+    {
+        "title": "Reverse a sentence",
+        "description": "Reverses the order of words in a sentence.",
+        "code": "def reverse_sentence(s):\n    return ' '.join(s.split()[::-1])"
+    },
+    {
+        "title": "Transpose a matrix",
+        "description": "Returns the transpose of a given matrix.",
+        "code": "def transpose(matrix):\n    return [list(row) for row in zip(*matrix)]"
+    },
+    {
+        "title": "Check palindrome ignoring spaces",
+        "description": "Checks if a string is a palindrome, ignoring spaces and case.",
+        "code": "def is_palindrome(s):\n    s = ''.join(c for c in s if c.isalnum()).lower()\n    return s == s[::-1]"
+    },
+    {
+        "title": "Count word frequency in a string",
+        "description": "Counts the frequency of words in a string.",
+        "code": "from collections import Counter\ndef word_frequency(text):\n    return Counter(text.split())"
+    },
+    {
+        "title": "Rotate list by k positions",
+        "description": "Rotates a list to the right by k positions.",
+        "code": "def rotate(lst, k):\n    k %= len(lst)\n    return lst[-k:] + lst[:-k]"
+    },
+    {
+        "title": "Get unique characters in order",
+        "description": "Extracts unique characters from a string while preserving their order.",
+        "code": "def unique_chars(s):\n    seen = set()\n    return ''.join(c for c in s if not (c in seen or seen.add(c)))"
+    },
+    {
+        "title": "Capitalize first letter of each word",
+        "description": "Capitalizes the first letter of each word in a string.",
+        "code": "def title_case(s):\n    return ' '.join(w.capitalize() for w in s.split())"
+    },
+    {
+        "title": "Find GCD of a list of numbers",
+        "description": "Calculates the greatest common divisor (GCD) of a list of numbers.",
+        "code": "from math import gcd\nfrom functools import reduce\ndef list_gcd(lst):\n    return reduce(gcd, lst)"
+    },
+    {
+        "title": "Find LCM of a list of numbers",
+        "description": "Calculates the least common multiple (LCM) of a list of numbers.",
+        "code": "from math import gcd\nfrom functools import reduce\ndef lcm(a, b): return a * b // gcd(a, b)\ndef list_lcm(lst): return reduce(lcm, lst)"
+    },
+    {
+        "title": "Count set bits in integer",
+        "description": "Counts the number of 1s in the binary representation of an integer.",
+        "code": "def count_bits(n):\n    return bin(n).count('1')"
+    },
+    {
+      "title": "Check if a string is a valid identifier",
+      "description": "Checks if a string is a valid Python identifier.",
+      "code": "def is_identifier(s):\n    return s.isidentifier()"
+    },
+    {
+      "title": "Pad string with zeros",
+      "description": "Pads a string with zeros to make it of the specified length.",
+      "code": "def pad_zero(s, length):\n    return s.zfill(length)"
+    },
+    {
+      "title": "Find missing number in list",
+      "description": "Finds the missing number in a consecutive list of integers.",
+      "code": "def find_missing(lst):\n    n = len(lst) + 1\n    return n * (n + 1) // 2 - sum(lst)"
+    },
+    {
+      "title": "Generate prime numbers up to n",
+      "description": "Generates all prime numbers up to a specified value n.",
+      "code": "def primes(n):\n    sieve = [True]*(n+1)\n    sieve[0:2] = [False, False]\n    for i in range(2, int(n**0.5)+1):\n        if sieve[i]:\n            sieve[i*i:n+1:i] = [False]*len(range(i*i, n+1, i))\n    return [i for i, p in enumerate(sieve) if p]"
+    },
+    {
+      "title": "Convert Roman numeral to integer",
+      "description": "Converts a Roman numeral string to its integer value.",
+      "code": "def roman_to_int(s):\n    roman = {'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}\n    total = 0\n    prev = 0\n    for c in reversed(s):\n        cur = roman[c]\n        total += cur if cur >= prev else -cur\n        prev = cur\n    return total"
+    },
+    {
+      "title": "Convert integer to Roman numeral",
+      "description": "Converts an integer to its Roman numeral representation.",
+      "code": "def int_to_roman(num):\n    val = [1000,900,500,400,100,90,50,40,10,9,5,4,1]\n    syms = ['M','CM','D','CD','C','XC','L','XL','X','IX','V','IV','I']\n    roman = ''\n    for i, v in enumerate(val):\n        roman += syms[i] * (num // v)\n        num %= v\n    return roman"
+    },
+    {
+      "title": "Check if string is numeric",
+      "description": "Checks if a string represents a numeric value.",
+      "code": "def is_numeric(s):\n    try:\n        float(s)\n        return True\n    except ValueError:\n        return False"
+    },
+    {
+      "title": "Check if a list is sorted",
+      "description": "Checks if a list is sorted in ascending order.",
+      "code": "def is_sorted(lst):\n    return lst == sorted(lst)"
+    },
+    {
+      "title": "Convert hex string to decimal",
+      "description": "Converts a hexadecimal string to its decimal value.",
+      "code": "def hex_to_dec(s):\n    return int(s, 16)"
+    },
+    {
+      "title": "Find second largest number",
+      "description": "Finds the second largest number in a list.",
+      "code": "def second_largest(lst):\n    lst = list(set(lst))\n    lst.sort()\n    return lst[-2] if len(lst) >= 2 else None"
+    },
+    {
+      "title": "Convert Celsius to Fahrenheit",
+      "description": "Converts a temperature from Celsius to Fahrenheit.",
+      "code": "def c_to_f(c):\n    return (c * 9/5) + 32"
+    },
+    {
+      "title": "Convert Fahrenheit to Celsius",
+      "description": "Converts a temperature from Fahrenheit to Celsius.",
+      "code": "def f_to_c(f):\n    return (f - 32) * 5/9"
+    },
+    {
+      "title": "Count lines in a text file",
+      "description": "Counts the number of lines in a text file.",
+      "code": "def count_lines(filename):\n    with open(filename) as f:\n        return sum(1 for _ in f)"
+    },
+    {
+      "title": "Remove punctuation from string",
+      "description": "Removes all punctuation characters from a string.",
+      "code": "import string\ndef remove_punctuation(s):\n    return s.translate(str.maketrans('', '', string.punctuation))"
+    },
+    {
+      "title": "Check if two lists are equal",
+      "description": "Checks if two lists are equal in terms of elements and order.",
+      "code": "def lists_equal(l1, l2):\n    return l1 == l2"
+    },
+    {
+      "title": "Chunk list into smaller lists",
+      "description": "Splits a list into chunks of specified size.",
+      "code": "def chunk_list(lst, size):\n    return [lst[i:i+size] for i in range(0, len(lst), size)]"
+    },
+    {
+      "title": "Get common elements in two lists",
+      "description": "Finds common elements between two lists.",
+      "code": "def common_elements(l1, l2):\n    return list(set(l1) & set(l2))"
+    },
+    {
+      "title": "Replace multiple substrings",
+      "description": "Replaces multiple substrings in a string based on a dictionary of replacements.",
+      "code": "def multi_replace(s, rep_dict):\n    for k, v in rep_dict.items():\n        s = s.replace(k, v)\n    return s"
+    }
+  ]
+  
+
+
+
+
+
