@@ -1,0 +1,247 @@
+[
+    {
+        "title": "Add Two Numbers",
+        "explanation": "This program takes two integer inputs from the user. It adds these numbers using the '+' operator and prints the result using the 'print()' function."
+    },
+    {
+        "title": "Check Even or Odd",
+        "explanation": "The program checks if a number entered by the user is even or odd. It uses the modulo operator '%' to determine whether the number is divisible by 2. If divisible, it prints 'Even'; otherwise, it prints 'Odd'."
+    },
+    {
+        "title": "Find Factorial",
+        "explanation": "This program uses recursion to calculate the factorial of a number. If the input number is 0, the factorial is 1 (base case). Otherwise, the factorial is calculated as 'n * factorial(n - 1)'."
+    },
+    {
+        "title": "Reverse a String",
+        "explanation": "The program reverses a string entered by the user. It uses slicing with '[::-1]' to reverse the string and prints the reversed string."
+    },
+    {
+        "title": "Multiplication Table",
+        "explanation": "This program generates a multiplication table for a number provided by the user. It uses a 'for' loop to iterate through numbers 1 to 10 and prints the product for each iteration."
+    },
+    {
+        "title": "Check Prime Number",
+        "explanation": "The program checks if a number is prime. For numbers greater than 1, it checks divisibility from 2 to the square root of the number. If divisible, it prints 'Not Prime'; otherwise, it prints 'Prime'."
+    },
+    {
+        "title": "Find the Largest Element",
+        "explanation": "This program takes a list of integers from the user and finds the largest element using the 'max()' function. It then prints the largest element."
+    },
+    {
+        "title": "Fibonacci Series",
+        "explanation": "The program generates a Fibonacci series up to 'n' terms provided by the user. It uses a 'for' loop to calculate the sequence iteratively, starting with 0 and 1."
+    },
+    {
+        "title": "Palindrome Check",
+        "explanation": "The program checks whether a given string is a palindrome. It compares the string to its reverse (using slicing '[::-1]') and prints 'Palindrome' if they match; otherwise, it prints 'Not a Palindrome'."
+    },
+    {
+        "title": "Bubble Sort Algorithm",
+        "explanation": "This program sorts a list of numbers using the Bubble Sort algorithm. Adjacent elements are repeatedly compared and swapped if out of order, and the sorted list is printed at the end."
+    },
+    {
+        "title": "Sum of List Elements",
+        "explanation": "This program calculates the sum of all elements in a list. The user enters a list of integers separated by spaces, which are converted into a list using a list comprehension. The 'sum()' function is used to calculate and print the total."
+    },
+    {
+        "title": "Leap Year Check",
+        "explanation": "The program checks if a given year is a leap year. A year is a leap year if it is divisible by 4 but not by 100, or it is divisible by 400. Based on this condition, the program prints whether the year is a 'Leap Year' or 'Not a Leap Year'."
+    },
+    {
+        "title": "Count Vowels in a String",
+        "explanation": "This program counts the number of vowels in a given string. It iterates through each character in the string and checks if it belongs to the set of vowels ('aeiouAEIOU'). The count is accumulated and displayed."
+    },
+    {
+        "title": "Find Second Largest Element",
+        "explanation": "The program finds the second largest element in a list of integers. The user enters the numbers, which are stored in a list. The list is sorted, and the second largest element is accessed using index '-2'."
+    },
+    {
+        "title": "Calculate Power of a Number",
+        "explanation": "This program calculates the power of a number. The user provides the base and the exponent as inputs. The '**' operator is used to compute the result, which is then displayed."
+    },
+    {
+        "title": "Remove Duplicates from List",
+        "explanation": "The program removes duplicate elements from a list. The user enters a list of integers, which is converted into a set (to remove duplicates) and then back into a list. The resulting list is printed."
+    },
+    {
+        "title": "GCD of Two Numbers",
+        "explanation": "This program calculates the Greatest Common Divisor (GCD) of two numbers using the 'math.gcd()' function. The user enters two integers, and the GCD is computed and displayed."
+    },
+    {
+        "title": "Character Frequency in String",
+        "explanation": "The program calculates the frequency of each character in a string. It uses a dictionary comprehension to count occurrences of each character by iterating over the unique characters in the string (using 'set')."
+    },
+    {
+        "title": "Check Armstrong Number",
+        "explanation": "The program checks if a given number is an Armstrong number. It calculates the sum of each digit raised to the power of the number of digits. If the result equals the original number, it prints 'Armstrong Number'; otherwise, 'Not an Armstrong Number'."
+    },
+    {
+        "title": "Binary Search",
+        "explanation": "This program implements the binary search algorithm. The user enters a sorted list and a target number. The program searches for the target by repeatedly dividing the search interval in half, returning the index of the target if found, or '-1' if not found."
+    },
+    {
+        "title": "Find the Sum of Digits in a Number",
+        "explanation": "This program calculates the sum of the digits in a number. It converts the number to a string to iterate through each digit, converts each digit back to an integer, and calculates their sum using the 'sum()' function."
+    },
+    {
+        "title": "Check Perfect Number",
+        "explanation": "The program checks if a number is a perfect number. A perfect number equals the sum of its proper divisors (excluding itself). It iterates from 1 to the number - 1, calculates the divisors, and compares the sum with the original number."
+    },
+    {
+        "title": "Merge Two Sorted Lists",
+        "explanation": "This program merges two pre-sorted lists provided by the user into a single sorted list. It combines both lists using the '+' operator and sorts the result using the 'sorted()' function."
+    },
+    {
+        "title": "Check Anagram Strings",
+        "explanation": "The program determines if two strings are anagrams by sorting their characters using 'sorted()' and comparing the results. Anagrams are strings that contain the same characters in different orders."
+    },
+    {
+        "title": "Convert Decimal to Binary",
+        "explanation": "This program converts a decimal number to binary using Python's built-in 'bin()' function. The 'bin()' function returns a binary string prefixed with '0b', and '[2:]' slicing removes the prefix."
+    },
+    {
+        "title": "Find Common Elements in Two Lists",
+        "explanation": "The program identifies the common elements between two lists. It uses the 'set' data structure to find the intersection of the two lists and converts the result back to a list."
+    },
+    {
+        "title": "Check Palindrome Number",
+        "explanation": "This program checks if a number is a palindrome by comparing the number with its reverse. The number is converted to a string, and '[::-1]' slicing is used to reverse it."
+    },
+    {
+        "title": "Calculate Compound Interest",
+        "explanation": "The program calculates compound interest using the formula 'CI = P * (1 + R/100)^T'. It takes the principal (P), rate of interest (R), and time (T) as inputs and computes the compound interest."
+    },
+    {
+        "title": "Check Armstrong Numbers in an Interval",
+        "explanation": "This program finds all Armstrong numbers within a user-defined interval. For each number, it computes the sum of its digits raised to the power of the number of digits and checks if it equals the original number."
+    },
+    {
+        "title": "Matrix Addition",
+        "explanation": "The program performs addition of two matrices. Both matrices are entered row by row by the user. The program adds corresponding elements of the two matrices and prints the resulting matrix."
+    },
+    {
+        "title": "Find LCM of Two Numbers",
+        "explanation": "This program calculates the Least Common Multiple (LCM) of two numbers. It uses the formula 'LCM = (num1 * num2) / GCD(num1, num2)', where GCD is calculated using the 'math.gcd()' function."
+    },
+    {
+        "title": "Count Words in a String",
+        "explanation": "This program counts the number of words in a string. The input string is split into a list of words using the 'split()' function, and the length of the list is returned as the word count."
+    },
+    {
+        "title": "Check Alphabet or Digit",
+        "explanation": "This program checks whether a given character is an alphabet, a digit, or neither. It uses the 'isalpha()' method to check for alphabets, 'isdigit()' to check for digits, and prints the result accordingly."
+    },
+    {
+        "title": "Swap Two Variables Without Temp",
+        "explanation": "This program swaps the values of two variables without using a temporary variable. It uses Python's multiple assignment feature: 'a, b = b, a'."
+    },
+    {
+        "title": "Generate Pascal's Triangle",
+        "explanation": "This program generates Pascal's triangle up to 'n' rows. It constructs each row by summing adjacent elements from the previous row, starting with the base case of [1]."
+    },
+    {
+        "title": "Find Transpose of a Matrix",
+        "explanation": "This program calculates the transpose of a matrix. The rows and columns of the matrix are swapped using a nested list comprehension."
+    },
+    {
+        "title": "Check if String is Uppercase",
+        "explanation": "This program checks if all the characters in a string are uppercase using the 'isupper()' method. If the string is entirely in uppercase, it prints 'String is uppercase'; otherwise, it prints 'String is not uppercase'."
+    },
+    {
+        "title": "Find Intersection of Two Lists",
+        "explanation": "This program finds common elements between two lists. It uses the 'set' data structure to compute the intersection of the two lists and converts the result back into a list."
+    },
+    {
+        "title": "Print Diamond Pattern",
+        "explanation": "This program prints a diamond pattern using stars ('*'). It first generates the upper half of the diamond using spaces and stars, and then mirrors it to create the lower half."
+    },
+    {
+        "title": "Find Median of a List",
+        "explanation": "This program calculates the median of a list of numbers. The list is sorted, and if the number of elements is odd, the middle element is returned; if even, the average of the two middle elements is calculated."
+    },
+    {
+        "title": "Check Palindrome List",
+        "explanation": "This program checks if a list of integers is a palindrome. It compares the list with its reverse (using slicing '[::-1]'). If they match, the program prints 'Palindrome List'; otherwise, it prints 'Not a Palindrome List'."
+    },
+    {
+        "title": "Remove Punctuation from String",
+        "explanation": "The program removes punctuation characters from a string using the 'string.punctuation' module. The 'translate()' method is used to replace punctuation with empty strings, leaving only the cleaned text."
+    },
+    {
+        "title": "Count Words in Each Line of Text",
+        "explanation": "This program counts the number of words in each line of a multi-line text. It takes input until the user types 'END', splits each line into words using 'split()', and calculates the word count for each line."
+    },
+    {
+        "title": "Sum of Digits in List",
+        "explanation": "The program calculates the sum of all digits in a list of numbers. Each number is converted into its string representation to extract individual digits, which are summed together."
+    },
+    {
+        "title": "Find Missing Number in List",
+        "explanation": "This program finds the missing number in a list of consecutive integers. It computes the full range of integers using 'range()' and subtracts the given numbers using the 'set()' operation to find the missing one."
+    },
+    {
+        "title": "Generate Random Password",
+        "explanation": "This program generates a random password of specified length. It uses 'string.ascii_letters', 'string.digits', and 'string.punctuation' to create a pool of characters, and 'random.choice()' selects characters randomly."
+    },
+    {
+        "title": "Check if All Characters Are Unique",
+        "explanation": "This program checks if all characters in a string are unique. It compares the length of the string with the length of the set created from it. If both lengths match, it confirms all characters are unique."
+    },
+    {
+        "title": "Sort Words in a Sentence",
+        "explanation": "This program sorts the words in a sentence alphabetically. It splits the sentence into words using 'split()', sorts them using the 'sorted()' function, and then joins the sorted words back into a single string."
+    },
+    {
+        "title": "Check Substring in String",
+        "explanation": "This program checks if a substring is present within a string. It uses the 'in' keyword to determine if the substring exists and prints the result accordingly."
+    },
+    {
+        "title": "Count Positive and Negative Numbers",
+        "explanation": "This program counts the number of positive and negative numbers in a list. It uses list comprehensions to separately count numbers greater than zero (positive) and less than zero (negative)."
+    },
+    {
+        "title": "Check if List is Sorted",
+        "explanation": "This program checks whether a list of integers is sorted in ascending order. It compares the input list with the list sorted using 'sorted()' and prints whether the list is sorted."
+    },
+    {
+        "title": "Find Longest Word in a Sentence",
+        "explanation": "This program finds the longest word in a sentence by splitting the sentence into words and using the 'max()' function with the 'len' attribute as the key."
+    },
+    {
+        "title": "Reverse Each Word in a Sentence",
+        "explanation": "The program reverses each word in a sentence while preserving the order of the words. It uses a list comprehension to reverse individual words and joins them back into a string."
+    },
+    {
+        "title": "Find Sum of Prime Numbers in a Range",
+        "explanation": "This program calculates the sum of all prime numbers within a given range. It uses a helper function 'is_prime()' to check for primes and accumulates the sum of prime numbers in the specified range."
+    },
+    {
+        "title": "Find Maximum Frequency Character",
+        "explanation": "The program determines the character that appears the most frequently in a string. It uses a dictionary to count occurrences of each character and the 'max()' function to find the character with the highest frequency."
+    },
+    {
+        "title": "Check if Matrix is Symmetric",
+        "explanation": "This program checks whether a square matrix is symmetric. It compares the matrix with its transpose (swapping rows and columns) and prints the result."
+    },
+    {
+        "title": "Find Minimum and Maximum in a List",
+        "explanation": "This program calculates the smallest and largest values in a list of integers using the built-in functions 'min()' and 'max()'."
+    },
+    {
+        "title": "Check if Year is a Century Year",
+        "explanation": "The program checks whether a given year is a century year by testing if it is divisible by 100. If true, it prints 'Century Year'; otherwise, 'Not a Century Year'."
+    },
+    {
+        "title": "Calculate HCF Using Recursion",
+        "explanation": "This program calculates the Highest Common Factor (HCF) of two numbers using a recursive approach. The base case is when the second number becomes zero, at which point the first number is the HCF."
+    },
+    {
+        "title": "Sort List by Length of Elements",
+        "explanation": "The program sorts a list of words by their length. It uses the 'sorted()' function with the 'len' function as the key to sort words based on their length in ascending order."
+    }
+]
+
+
+
+
+
